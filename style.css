@@ -1,5 +1,3 @@
-<style>
-	body{
 		background-color: #f1c40f;
 		-webkit-animation: color 5s ease-in  0s infinite alternate running;
 		-moz-animation: color 5s linear  0s infinite alternate running;
@@ -44,4 +42,3 @@
 		text-decoration: none;
 		color: #333;
 	}
-	</style>
