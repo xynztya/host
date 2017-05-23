@@ -1,0 +1,107 @@
+/* animation.css *
+* Copyright 2016 
+* Template by hyriu (http://hyriu.web.id)
+*/ 
+
+/* =custome 
+------------------------------------------------- */
+
+.balloon{
+	-webkit-animation-name: balloon;
+	animation-name: balloon;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes balloon {
+	0% , 100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+	}
+}
+
+@keyframes balloon {
+	0% , 100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+	}
+}
+
+.shaking{
+	-webkit-animation-name: shaking;
+	animation-name: shaking;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes shaking {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shaking {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+
+/* = CONTENT Section
+-------------------------------------------------- */
+.cover-title .cv-title{
+	-webkit-animation-name: CoverTitle;
+	animation-name: CoverTitle;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes CoverTitle {
+	0%{ color: #FF4A4A; }
+	30% { color: #333 }
+	60% { color: #1e90ff }
+	100%{ color: #F23497; }
+}
+@keyframes CoverTitle {
+	0%{ color: #FF4A4A; }
+	30% { color: #333 }
+	60% { color: #1e90ff }
+	100%{ color: #F23497; }
+}
